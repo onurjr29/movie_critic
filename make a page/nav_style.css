@@ -1,0 +1,54 @@
+body{
+    background-image: url(backgrounds/yellow.jpg);
+    background-size: cover;
+    background-attachment: fixed ;
+    margin: 0px;
+}
+
+header .head{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+
+nav{
+    border-radius: 10px;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(2, 78, 113, 0.58);
+    box-shadow: 0 0 1.5em black;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+nav .navitem{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 6em;
+    height: 1.8em;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+
+nav .navitem:hover{
+    transform: scale(1.1);
+    background-color: rgba(211, 211, 211, 0.311);
+    box-shadow: 0 0 5px black;
+} 
+
+nav #top{
+    margin-left: 15em;
+}
+
+nav #last{
+    margin-right: 15em;
+}
