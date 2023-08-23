@@ -1,11 +1,10 @@
 section{
-    margin-top: 3em;
-    margin-left: 10em;
-    margin-right: 10em;
+    max-width: 80vw;
+    margin: 2rem auto;
     background-color: rgba(128, 128, 128, 0.4);
 }
 .movieNews{
-    display: flexbox;
+    padding: 0rem 1rem;
     height: 25em;
     border-radius: 0.3em;
     box-shadow: 0 0 1em black;
@@ -15,28 +14,38 @@ section{
 .movieNews .header{
     font-size: 1.8em;
     padding: 0.3em;
-    padding-left: 2.5em; 
     text-shadow: 0 0 8px black;
 }
 
 .movieNews img{
-    height: 18em;
+    max-height: 15rem;
     border-radius: 1em;
     box-shadow: 0 0 10px black;
 }
 
 .movieNews .images{
+    padding: 0rem 1rem ;
     height: 20em;
-    margin-top: 0.1em;
     display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: space-around;
+    gap: 2rem;
+    overflow-x: auto;
     /*background-color: rgba(0, 0, 0, 0.4);*/
     border-radius: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
     box-shadow: 0 0 20px white;
 }
+.movieNews .images::-webkit-scrollbar{
+    width: 1em;
+    height: 0.5em;
+}
+.movieNews .images::-webkit-scrollbar-track{
+    background:  hsl(0, 0%, 63%);
+}
+.movieNews .images::-webkit-scrollbar-thumb{
+    background:  hsl(0, 0%, 100%);
+}
+
 
 
 #shadowImg{
@@ -52,6 +61,11 @@ section{
 .movieNews .active:hover{
     box-shadow: 0 0 20px white;
 }
+@media screen and (max-width: 768px){
+    .movieNews .images{
+        padding: 0 0;
 
+    }
+}
 
 
